@@ -86,62 +86,135 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body{
-  font-size: 16px;
-  width:960px;
-}
+/****************** Base styles ***********************/
+header{
+  background-color: #022322;
+  display:flex;
+  justify-content: center;
 
-   header{
-  background-color: #202322;
-  height: 100px;
-  width:960px
 }
 
 header .unplugged{
-  display:flex;
-  justify-content: center;
-
-}
-
-.image-conatiner{
-  position:relative;
-  display:inline-block;
-}
-
-.image-conatiner .img{
-  display:flex;
-  height:auto;
-}
-
-.overlay-text{
-  display:flex;
-  justify-content: center;
-  position: absolute;
-left:10%;
-  top:20%;
-
-}
-main img{
   display: flex;
-
-  height:600px;
- 
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
-main h1{
-  color:white;
-  line-height: 36px;
-  font-size: 2.25em;
+header nav ul{
+  display:flex;
+  justify-content: space-around;
+  list-style:none;
 }
 
-/****phone value***/
-@media (max-width:90%){
-
-
-
-
-  
+footer{
+  color:#e2e3ed;
+  background-color: #022322;
+  display:flex;
+  flex-direction:column;
+  align-items: center; /****** puts items in the center of the screen on left side of item ****/
+  text-align:center;   /***** puts items in center of the screen in middle of  item*****/
 }
-  
+
+footer .social{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .social p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************----------------- MAIN PAGE --moble style ---------------------****************************/
+
+.hero-area{
+  display: flex;
+  justify-content: center;
+
+}
+
+/***aside area ***/
+
+aside{
+  display: flex;
+  justify-content: center;
+  background-color: #527158;
+  color:#e2e3ed;
+  height:400px;
+}
+
+/***** feature area *****/
+
+.feature{
+  display: flex;
+  justify-content: center;
+}
+
+.feature .feature-items{
+  display:flex;
+  justify-content:center;
+}
+
+/************* review area *****************/
+
+.review{
+  display: contents;
+  justify-content: center;
+}
+
+
+/******************--------------- About page -- mobile styles ------------------------***********************/
+
+/****** mision section ******/
+
+.mision{
+  display:flex;
+  justify-content:center;
+}
+
+/*************************** contact section ***********************/
+
+.about-contact{
+  display:flex;
+  justify-content: center;
+}
+
+
+
+
+/**********************-------------- FAQ page -- mobile styles -------------------------**************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==========================================================================
