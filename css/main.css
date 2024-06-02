@@ -181,12 +181,18 @@ aside{
 }
 
 
-
-
 /**********************-------------- FAQ page -- mobile styles -------------------------**************************/
 
 
+.faq{
+  display:flex;
+  justify-content: center;
+}
 
+.faq .content-wrapper{
+  display:flex;
+  justify-content: center;
+}
 
 
 
