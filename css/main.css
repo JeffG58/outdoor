@@ -86,12 +86,18 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+.content-wrapper{  /**sets all cont-wrapper**/
+  width:90%;
+  margin:50px 0;
+}
+
+
 /****************** Base styles ***********************/
 header{
-  background-color: #022322;
   display:flex;
   justify-content: center;
-
+  padding:15px 0;
 }
 
 header .unplugged{
@@ -99,20 +105,43 @@ header .unplugged{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin:0;
 }
+
+.divider{
+  width:100%;
+  height:1px;
+  margin:10px 0 20px 0;
+}
+
+header nav{
+  width:60%;
+}
+
 header nav ul{
   display:flex;
   justify-content: space-around;
   list-style:none;
+  width:100%;
 }
 
 footer{
-  color:#e2e3ed;
-  background-color: #022322;
   display:flex;
   flex-direction:column;
   align-items: center; /****** puts items in the center of the screen on left side of item ****/
   text-align:center;   /***** puts items in center of the screen in middle of  item*****/
+}
+
+footer .content-wrapper{
+  width:55%;
+}
+
+footer p{
+  margin:0;
+}
+
+footer .contact{
+  margin-bottom:50px;
 }
 
 footer .social{
@@ -126,15 +155,35 @@ footer .social p{
   align-items: center;
 }
 
+footer .copyright{
+  margin:20px 0;
+}
+
 /*************************----------------- MAIN PAGE --moble style ---------------------****************************/
 
+/*** header area ***/
+.unplugged{
+  width:60%;
+  padding-top:15px;
+  padding-bottom:1opx;
+}
+
+.header nav{
+  width:55%
+}
+
+header nav ul{
+  width:55%;
+}
+
+
+/****** main area ******/
 .hero-area{
   display: flex;
   justify-content: center;
-
 }
 
-/***aside area ***/
+/*** aside area - main ***/
 
 aside{
   display: flex;
@@ -144,23 +193,45 @@ aside{
   height:400px;
 }
 
-/***** feature area *****/
+/***** feature area - main *****/
 
 .feature{
   display: flex;
   justify-content: center;
 }
 
+.feature h2{
+  margin-bottom:60px;
+}
+
 .feature .feature-items{
   display:flex;
   justify-content:center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+.feature p{
+  margin:0;
 }
 
-/************* review area *****************/
+/************* review area - main *****************/
 
 .review{
-  display: contents;
+  display:flex;
   justify-content: center;
+}
+
+.review h2{
+  margin-bottom:40px;
+}
+
+.review h3{
+  margin:20px 0;
+  width:55%;
+}
+/*************** footer area - main ************/
+footer .comtent-wrapper{
+  width:50%;
 }
 
 
@@ -173,6 +244,7 @@ aside{
   justify-content:center;
 }
 
+
 /*************************** contact section ***********************/
 
 .about-contact{
@@ -180,6 +252,9 @@ aside{
   justify-content: center;
 }
 
+.about-contact p{
+  margin:0;
+}
 
 /**********************-------------- FAQ page -- mobile styles -------------------------**************************/
 
@@ -194,17 +269,13 @@ aside{
   justify-content: center;
 }
 
+.faq h2{
+  margin-bottom:40px
+}
 
-
-
-
-
-
-
-
-
-
-
+.faq-content{
+  margin-bottom: 50px;
+}
 
 
 
