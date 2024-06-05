@@ -98,6 +98,7 @@ header{
   display:flex;
   justify-content: center;
   padding:15px 0;
+  background-color: #202322;
 }
 
 header .unplugged{
@@ -121,7 +122,6 @@ header nav{
 header nav ul{
   display:flex;
   justify-content: space-around;
-  list-style:none;
   width:100%;
 }
 
@@ -130,6 +130,8 @@ footer{
   flex-direction:column;
   align-items: center; /****** puts items in the center of the screen on left side of item ****/
   text-align:center;   /***** puts items in center of the screen in middle of  item*****/
+  background-color: #202322;
+  color:white;
 }
 
 footer .content-wrapper{
@@ -151,7 +153,7 @@ footer .social{
 }
 footer .social p{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -165,7 +167,7 @@ footer .copyright{
 .unplugged{
   width:60%;
   padding-top:15px;
-  padding-bottom:1opx;
+  padding-bottom:10px;
 }
 
 .header nav{
@@ -190,7 +192,6 @@ aside{
   justify-content: center;
   background-color: #527158;
   color:#e2e3ed;
-  height:400px;
 }
 
 /***** feature area - main *****/
@@ -202,6 +203,11 @@ aside{
 
 .feature h2{
   margin-bottom:60px;
+}
+
+.feature article{
+  width:60%;
+  margin: 30px o;
 }
 
 .feature .feature-items{
@@ -244,7 +250,6 @@ footer .comtent-wrapper{
   justify-content:center;
 }
 
-
 /*************************** contact section ***********************/
 
 .about-contact{
@@ -267,6 +272,9 @@ footer .comtent-wrapper{
 .faq .content-wrapper{
   display:flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
 .faq h2{
@@ -376,14 +384,157 @@ footer .comtent-wrapper{
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+
+
+@media only screen and (min-width: 768px) {
+    /*tablet styles here*/
+    /************--------- everything style ------------------************/
+    .content-wrapper{
+      width:640px;
+      margin:100px o;
+    }
+
+    /****************-------- Header ---------------*****************/
+
+    header{
+      padding:33px 0;
+    }
+    
+    header .unplugged{
+      width:100%;
+    }
+
+    header nav{
+      width:25%;
+    }
+
+    header nav ul{
+      justify-content: space-between;
+    }
+    header img{
+      width:33%;
+    }
+
+    header .divider{
+      display:none;
+    }
+
+    /****************--------------- big picture area main -------------************/
+    
+
+    /*****************------------ aside area main ---------------******************/
+
+    aside .content-wrapper{
+      margin:50px 0;
+      display: flex;
+      justify-content: space-between;
+      align-content: flex-start;
+
+    }
+
+    aside .join{
+      display: flex;
+      flex-direction: column;
+      width:40%;
+      margin:0;
+    }
+
+    aside .email{
+      display:flex;
+      flex-direction: column;
+      width:40%;
+      margin:0;
+    }
+
+    /*****************************------------- feature section main -----------**************/
+
+    .feature article{
+      display:flex;
+      align-items:center;
+      flex-flow:column wrap;
+      flex-basis: 50%;
+    }
+    .feature .item-description{
+      width:50%
+    }
+
+    /************************------------------ review section main ----------------*********************/
+    .review article{
+      display:flex;
+      justify-content: space-between;
+    }
+
+    .review article div{
+      width: 50%;
+    }
+
+    /*********************--------------------- footer section ---------------**********************/
+    footer .comtent-wrapper{
+      width:65%;
+    }
+
+    footer .content{
+      display: flex;
+      justify-content: space-between;
+    }
+    footer .contact{
+      margin-bottom: 0;  /*****brought the whole content wrapper down in size****/
+    }
+    
+    footer .copyright{
+      width:100%;
+    }
+
+    /*******************************-------------- About page ----------------********************/
+
+    /**** mission section***/
+
+    .mission{
+      display: flex;
+      justify-content: center;
+    }
+    .about-content{
+      display: flex;
+      justify-content: space-between;
+      padding-top:20px;
+    }
+
+    .about-content p{
+      width:45%;
+    }
+
+    /*** information section ***/
+  
+    .about-information{
+      display:flex;
+      justify-content: space-between;
+      align-items: space-between;
+    }
+    .about-information p{
+      width:45%;
+    }
+
+    /*** footer section ***/
+    
+    /*********************---------------- FAQ page -----------------------***********************/
+    .faq .content-wrapper {
+      justify-content:space-between;
+    }
+
+    .faq-content{
+      flex-basis: 45%;
+    }
+
+    .faq h2{
+      width:100%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /*desktop styles here*/
 }
 
 @media print,
