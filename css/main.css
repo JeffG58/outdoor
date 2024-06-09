@@ -535,6 +535,50 @@ footer .comtent-wrapper{
 
 @media only screen and (min-width: 1200px) {
   /*desktop styles here*/
+/***********************---------------------- header -------------***********************/
+.content-wrapper{
+  max-width: 960px;
+}
+header{
+  padding: 15px 0;
+}
+
+.hero-area h1{
+  width:70%;
+}
+
+aside .content-wrapper{
+  justify-content: space-around;
+}
+
+aside .email{
+  width:30%;
+}
+
+.feature h2{
+  width:90%;
+}
+.feature-items article{
+  flex-basis:33%;
+}
+
+.review h2{
+  padding-bottom: 50px;
+}
+
+.review article div{
+  width:43%;
+}
+/*********************------------------------- about page -------------------**********************/
+.mission h2{
+  width:90%;
+}
+
+/**************************------------------ FAQ page ------------------------********************/
+.faq h2{
+  width:70%
+}
+
 }
 
 @media print,
