@@ -87,9 +87,76 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
+/***************--------------- all  pages styles -----------***************/
+   body{
+    font-family:'Open Sans', sans-serif;
+    font-size:1em;
+   }
+   
+   h1{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+   }
+
+   h2, h3, h4{
+    font-family:Poppins, sans-serif;
+    color:#e2e3ed;
+   }
+
+   h3 h4{
+    font-size: 1.12em;
+    font-weight: 500;
+   }
+
+   p{
+    font-size: .87em;
+    line-height: 18px;
+    color:#e2e3ed;
+   }
+
+  .divider{
+    background-color: #3a3a3a;
+   }
+
+   .about-contact{
+    background-color: #2a423a;
+   }
+
+   .review{
+    background-color: #2a423a;
+   }
+
+   aside{
+    background-color: #527158;
+   }
+
+   .mission{
+    background-color: #527158;
+   }
+
+   .faq{
+    background-color: #527158;
+   }
+   
 .content-wrapper{  /**sets all cont-wrapper**/
   width:90%;
   margin:50px 0;
+}
+
+html{
+  font-size:1rem;
+}
+
+ nav a{
+  text-decoration: none;
+  color:#e2e3ed;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+
+address{
+  font-style: normal;
 }
 
 
@@ -163,6 +230,20 @@ footer .copyright{
 
 /*************************----------------- MAIN PAGE --moble style ---------------------****************************/
 
+h1{
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
+  color:#e2e3ed;
+}
+
+h2{
+  font-size:1.87em;
+  font-weight:500;
+}
+
+
+
 /*** header area ***/
 .unplugged{
   width:60%;
@@ -190,8 +271,6 @@ header nav ul{
 aside{
   display: flex;
   justify-content: center;
-  background-color: #527158;
-  color:#e2e3ed;
 }
 
 /***** feature area - main *****/
@@ -229,6 +308,7 @@ aside{
 
 .review h2{
   margin-bottom:40px;
+  line-height: 30px;
 }
 
 .review h3{
@@ -278,19 +358,17 @@ footer .comtent-wrapper{
 }
 
 .faq h2{
-  margin-bottom:40px
+  margin-bottom:40px;
+  line-height: 30px;
 }
 
 .faq-content{
   margin-bottom: 50px;
 }
 
-
-
-
-
-
-
+.faq-content h4{
+  line-height:24px ;
+}
 
 
 
@@ -389,14 +467,53 @@ footer .comtent-wrapper{
 
 
 @media only screen and (min-width: 768px) {
-    /*tablet styles here*/
+
     /************--------- everything style ------------------************/
     .content-wrapper{
       width:640px;
       margin:100px o;
     }
 
-    /****************-------- Header ---------------*****************/
+    h1{
+      font-size: 3em;
+      line-height: 48px;
+    }
+
+    h2{
+      font-size: 2.25em;
+      line-height: 48px;
+    }
+
+    h3{
+      font-size: 1.5em;
+      line-height: 30px;
+    }
+
+    .faq h4{
+      font-size: .87em;
+      line-height: 15.75px;
+    }
+
+    .faq p{
+      font-size: .87em;
+      line-height: 15.75px;
+    }
+
+    footer h4{
+      font-size: 1.5em;
+    }
+
+    .contact h4{
+      font-size: 1.5em;
+    }
+
+    footer p {
+      line-height: 18px;
+    }
+
+        /******************-----------------------tablet styles here----------------------*******************/
+
+    /****************--------  tablet Header ---------------*****************/
 
     header{
       padding:33px 0;
@@ -421,10 +538,10 @@ footer .comtent-wrapper{
       display:none;
     }
 
-    /****************--------------- big picture area main -------------************/
+    /****************--------------- tablet big picture area main -------------************/
     
 
-    /*****************------------ aside area main ---------------******************/
+    /*****************------------ tablet aside area main ---------------******************/
 
     aside .content-wrapper{
       margin:50px 0;
@@ -448,7 +565,7 @@ footer .comtent-wrapper{
       margin:0;
     }
 
-    /*****************************------------- feature section main -----------**************/
+    /*****************************------------- tablet feature section main -----------**************/
 
     .feature article{
       display:flex;
@@ -460,7 +577,7 @@ footer .comtent-wrapper{
       width:50%
     }
 
-    /************************------------------ review section main ----------------*********************/
+    /************************------------------ tablet review section main ----------------*********************/
     .review article{
       display:flex;
       justify-content: space-between;
@@ -470,7 +587,7 @@ footer .comtent-wrapper{
       width: 50%;
     }
 
-    /*********************--------------------- footer section ---------------**********************/
+    /*********************--------------------- tablet footer section ---------------**********************/
     footer .comtent-wrapper{
       width:65%;
     }
@@ -535,7 +652,28 @@ footer .comtent-wrapper{
 
 @media only screen and (min-width: 1200px) {
   /*desktop styles here*/
-/***********************---------------------- header -------------***********************/
+/************--------- everything style ------------------************/
+h1{
+  font-size: 3.75em;
+}
+
+h2{
+  font-size: 2.25em;
+}
+
+h3 h4 {
+  font-size: 1.87em;
+}
+
+p{
+  font-size: 1.12em;
+  line-height: 24px;
+}
+
+/***********************---------------------- desktop header -------------***********************/
+.unplugged{
+  max-width: 960px;
+}
 .content-wrapper{
   max-width: 960px;
 }
@@ -577,6 +715,15 @@ aside .email{
 /**************************------------------ FAQ page ------------------------********************/
 .faq h2{
   width:70%
+}
+
+.faq h4{
+  font-size: 1.12em;
+  line-height: 18px;
+}
+.faq p {
+  font-size: 1.12em;
+  line-height: 18px;
 }
 
 }
