@@ -137,7 +137,29 @@ h2, h3, h4{
   font-size: normal;
 }
 
+.hero-area {
+  background: url('../img/unplugged-retreat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
 
+.feature{
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.map img{
+  width:100%;
+  height: 450px;
+}
+
+figure{
+  margin: 0;
+}
 
 /********************------------------------mobile all pages--------------------******************/
 .content-wrapper{
@@ -335,6 +357,11 @@ input[type=button] {
 .review h3{
   margin:20px;
   width:52%
+}
+
+.review img{
+  width:100%;
+  padding:0;
 }
 
 
@@ -592,13 +619,13 @@ aside .content-wrapper .join, aside .content-wrapper .email{
   justify-content: space-between;
 }
 
-
-.reviews article div{
-  width: 49%;
+.review article figure, .review article div{
+  width:49%; 
 }
 
-.review p{
-  width:49%
+.review h3{
+  width:75%;
+  margin:0;
 }
 
 /****************************------------------------- FAQ tablet--------------------*******************/
@@ -685,6 +712,9 @@ aside .content-wrapper .join, aside .content-wrapper .email{
   }
 
   /****************-------------------- main desktop -----------------************************/
+  header{
+    padding:0;
+  }
 
   header .content-wrapper{
     padding: 15px 0;
@@ -710,12 +740,18 @@ aside .content-wrapper .join, aside .content-wrapper .email{
   }
 
   .review h3{
-    width:30%
+    width:905;
   }
 
   .review article p {
-    width:42%;
+    width:91%;
   }
+
+  .review article figure, .review article div{
+    width:45%; 
+  }
+
+
 
   /****************************------------------------------ FAQ dektop --------------***********************/
 
