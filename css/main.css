@@ -138,6 +138,7 @@ h2, h3, h4{
 }
 
 
+
 /********************------------------------mobile all pages--------------------******************/
 .content-wrapper{
   width:90%;
@@ -165,9 +166,12 @@ header{
   padding:15px, 0;
 }
 
+
+
 header nav{
   width:60%;
-  font-weight: 600;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 header nav ul{
@@ -248,6 +252,7 @@ footer address{
 }
 
 
+
 /*** aside area - main ***/
 
 aside{
@@ -309,17 +314,12 @@ input[type=button] {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: row wrap;
-}
-
-.feature-items{
-  flex-direction: column;
-  width:60%;
-  padding: 0 20%;
+  flex-flow: row wrap;
 }
 
 .features p{  
-  margin: 0;;
+  text-align: center;
+  margin: 0;
 }
 
 /************* review area - main *****************/
@@ -329,7 +329,6 @@ input[type=button] {
   justify-content: center;
 }
 .review h2{
-  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -367,13 +366,13 @@ input[type=button] {
 /**********************-------------- FAQ page -- mobile styles -------------------------**************************/
 .faq{
   display: flex;
-  justify-content: center;
+  justify-content:center;
 }
 
 .faq .content-wrapper{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   margin: 50px 0 0 0;
 }
@@ -383,6 +382,10 @@ input[type=button] {
 
 .faq .content{
   margin-bottom: 50px;
+}
+
+.faq h4{
+  line-height: 24px;
 }
 
 
@@ -480,45 +483,254 @@ input[type=button] {
 
 
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
+  /**********************----------------------all pages tablet-----------********************/
+.content-wrapper{
+    max-width: 640px;
+    margin:100px 0;
+  }
 
-    /************--------- everything style ------------------************/
-    h1{
-      font-size: 3em;
-      line-height: 48px;
-    }
+  h1{
+    font-size: 3em;
+    line-height: 48px;
+    margin: 0;
+  }
 
-    h2{
-      font-size: 2.25em;
-      line-height: 48px;
-    }
+  h2{
+    font-size: 2.25em;
+    line-height: 48px;
+  }
 
-    h3{
-      font-size: 1.5em;
-      line-height: 24px;
-    }
+  h3{
+    font-size: 1.5em;
+    line-height:30px;
+  }
 
-    footer, .contact h4{
-      font-size: 1.5em;
-    }
+  /**********header *************/
+  header{
+    padding:33px 0 ;
+  }
 
-    footer p{
-      line-height: 18px;
-    }
+  header .content-wrapper{
+    width:100%;
+    justify-content: space-between;
+  }
 
-   
+  header a{
+    width:33%;
+    margin: 0;
+  }
+
+  header nav {
+    width:23%;
+  }
+
+  header .divider{
+    display: none;
+  }
+
+
+/********** footer **************/
+  footer .content-wrapper{
+    width:63%;
+  }
+
+  footer .content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .contact{
+    margin:0;
+  }
+
+  footer .contact h4{
+    padding-bottom: 40px;
+  }
+
+  footer address, a{
+   margin-bottom: 100px;
+  }
+
+  /***************------------------------ main tablet -----------------------****************************/
+ 
+/************-------------------- aside -----------------**************/
+aside .content-wrapper{
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+aside .content-wrapper .join, aside .content-wrapper .email{
+  width: 40%;
+  margin:o;
+}
+
+/*********************----------------- features tablet ------------*************/
+.feature h2{
+  margin-bottom: 20px;
+}
+
+.feature article{
+ display: flex;
+ align-items: center;
+ flex-flow: column wrap;
+ flex-basis: 50%;
+}
+
+.feature .item-description{
+  width:62%;
+}
+/********** review tablet *************/
+.review h2{
+  width:85%;
+}
+
+.review article{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.reviews article div{
+  width: 49%;
+}
+
+.review p{
+  width:49%
+}
+
+/****************************------------------------- FAQ tablet--------------------*******************/
+.faq h4{
+  line-height: 15.75px;
+  font-size: .875em;
+}
+
+.faq p{
+  line-height: 15.75px;
+  font-size: .875em;
+}
+
+.faq h2{
+  width: 100%;
+}
+
+.faq .content-wrapper{
+  justify-content: space-between;
+}
+
+.faq-content{
+  flex-basis: 45%;
+}
+
+/****************************------------------------ about tablet --------------------*******************/
+.about-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top:20px;
+}
+
+
+.mission p{
+  flex-basis: 45%;
+}
+
+.about-contact h2{
+  font-size: 2.25em;
+  width:80%;
+}
+
+.about-information{
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  width: 90%;
+}
+
 }
 
 @media only screen and (min-width: 1200px) {
-  /*desktop styles here*/
-/************--------- everything style ------------------************/
-
-/***********************---------------------- desktop header -------------***********************/
 
 
-/*********************------------------------- Desktop About page -------------------**********************/
+  .content-wrapper{
+    max-width: 960px;
+  }
 
-/**************************------------------ Desktop FAQ page ------------------------********************/
+  h1{
+    font-size:3.75em;
+  }
+
+  h2{
+    font-size:2.25em;
+  }
+
+  .faq h2,{
+    font-size:3em;
+  }
+
+  h3,h4{
+    font-size:1.875em;
+  }
+
+  .faq h4, .faq p{
+    font-size:1.125em;
+    line-height:18px;
+  }
+
+  p{
+    font-size:1.125em;
+    line-height:24px;
+  }
+
+  /****************-------------------- main desktop -----------------************************/
+
+  header .content-wrapper{
+    padding: 15px 0;
+  }
+
+  aside h2 {
+    font-size: 2.25em;
+}
+
+  aside .content-wrapper .join, aside .content-wrapper .email{
+    width:30%;
+  }
+  .feature h2{
+    width: 90%;
+  }
+
+  .feature article{
+    flex-basis: 33%;
+  }
+
+  .review h2{
+    padding-bottom: 50px;
+  }
+
+  .review h3{
+    width:30%
+  }
+
+  .review article p {
+    width:42%;
+  }
+
+  /****************************------------------------------ FAQ dektop --------------***********************/
+
+
+  /*****************************----------------------------- ABOUT ----------------------***********************/
+.mission h2{
+  font-size: 3em;
+  width:90%;
+}
+
+.about-contact h2{
+  width:70%;
+}
+
+
 
 }
 @media print,
