@@ -354,8 +354,10 @@ input[type=button] {
 article .item-description{  
   text-align: center;
   margin: 0;
- 
-  
+}
+
+.feature p{
+  text-align: center;
 }
 
 .feature i{
@@ -566,6 +568,7 @@ article .item-description{
   header a{
     width:33%;
     margin: 0;
+    padding:0;
   }
 
   header nav {
@@ -583,20 +586,28 @@ article .item-description{
   }
 
   footer .content{
+    height: 110px;
+  }
+
+  footer .content{
     display: flex;
     justify-content: space-between;
   }
 
-  footer .contact{
+  footer .contact h4{
     margin:0;
   }
 
-  footer .contact h4{
+  footer .social h4{
+    margin:0;
+  }
+
+  footer .contact h4, footer .social h4{
     padding-bottom: 40px;
   }
 
   footer address, a{
-   margin-bottom: 100px;
+   padding-bottom: 100px;
   }
 
   /***************------------------------ main tablet -----------------------****************************/
@@ -629,6 +640,15 @@ aside .content-wrapper .join, aside .content-wrapper .email{
 .feature .item-description{
   width:62%;
 }
+
+.feature .items{
+  text-align: start;
+
+}
+
+
+
+
 /********** review tablet *************/
 .review h2{
   width:85%;
@@ -641,6 +661,14 @@ aside .content-wrapper .join, aside .content-wrapper .email{
 
 .review article figure, .review article div{
   width:49%; 
+}
+
+ .review img{
+  width:100%;
+}
+
+.review figure{
+  margin:0;
 }
 
 .review h3{
@@ -704,6 +732,7 @@ aside .content-wrapper .join, aside .content-wrapper .email{
   position: relative;
   margin:0;
 }
+
 
 }
 
