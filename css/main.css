@@ -625,11 +625,14 @@ article .item-description{
 
   footer .social h4{
     margin:0;
-    width:130%;
+    width:100%;
   }
 
   footer .contact h4, footer .social h4{
     padding-bottom: 40px;
+  }
+  footer .social{
+    padding: 0%;
   }
 
   footer address, a{
@@ -637,7 +640,7 @@ article .item-description{
   }
 
   footer .icon{
-    width:130%;
+    width:100%;
   }
 
   .icon a{
